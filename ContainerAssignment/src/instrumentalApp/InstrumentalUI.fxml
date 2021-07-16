@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: #e1f5fe;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="instrumentalApp.InstrumentalController">
+   <center>
+      <TabPane fx:id="tabPane" prefHeight="200.0" prefWidth="200.0" tabClosingPolicy="UNAVAILABLE" BorderPane.alignment="CENTER">
+        <tabs>
+          <Tab text="Piano">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TilePane hgap="20.0" layoutX="14.0" layoutY="8.0" prefHeight="420.0" prefWidth="650.0" vgap="30.0">
+                           <children>
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processDo" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #9e9e9e;" text="Do" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processRe" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #90a4ae;" text="Re" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processMi" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #9e9e9e;" text="Mi" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processFa" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #90a4ae;" text="Fa" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processSol" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #9e9e9e;" text="Sol" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processLa" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #90a4ae;" text="La" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processSi" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #9e9e9e;" text="Si" />
+                              <Button alignment="CENTER" mnemonicParsing="false" onAction="#processDo" prefHeight="422.0" prefWidth="60.0" style="-fx-background-color: #90a4ae;" text="Do" />
+                           </children>
+                        </TilePane>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Drum">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <FlowPane hgap="30.0" layoutX="7.0" layoutY="6.0" prefHeight="400.0" prefWidth="650.0" vgap="20.0">
+                           <children>
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound1" prefHeight="181.0" prefWidth="207.0" style="-fx-background-color: #ff8b94;" text="1" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound2" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8b94ff;" text="2" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound3" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8b94ff;" text="3" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound4" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8b94ff;" text="4" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound5" prefHeight="100.0" prefWidth="100.0" style="-fx-background-color: #8b94ff;" text="5" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound6" prefHeight="185.0" prefWidth="227.0" style="-fx-background-color: #94ff8b;" text="6" />
+                              <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#processSound7" prefHeight="143.0" prefWidth="178.0" style="-fx-background-color: #ff8b94;" text="7" />
+                           </children>
+                        </FlowPane>
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </center>
+   <bottom>
+      <Label alignment="CENTER" prefHeight="30.0" prefWidth="800.0" text="\@copyright" BorderPane.alignment="CENTER" />
+   </bottom>
+   <left>
+      <TreeView fx:id="tvInstruments" onMouseClicked="#processTv" prefHeight="450.0" prefWidth="141.0" style="-fx-background-color: #9e9e9e;" BorderPane.alignment="CENTER" />
+   </left>
+   <top>
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="800.0" text="CLICK N SOUNDS" textFill="#bf369b" BorderPane.alignment="CENTER">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </top>
+</BorderPane>
