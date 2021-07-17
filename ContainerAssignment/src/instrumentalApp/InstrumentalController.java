@@ -64,57 +64,57 @@ public class InstrumentalController implements Initializable {
     void processSol(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("pianoSounds","Sol.wav");
      	playMedia.run();
-     	system.out.println("Sounds Play");
+     	
     }
 
     @FXML
     void processSound1(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","crash.mp3");
      	playMedia.run();
-    	system.out.println("Sounds Play");
+    	
     }
 
     @FXML
     void processSound2(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","tom-1.mp3");
       	playMedia.run();
-    	system.out.println("Sounds Play");
+    	
     }
 
     @FXML
     void processSound3(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","tom-2.mp3");
       	playMedia.run();
-    	system.out.println("Sounds Play");
+    	
     }
 
     @FXML
     void processSound4(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","tom-3.mp3");
       	playMedia.run();
-    	system.out.println("Sounds Play");
-    	System.out.println("testing");
+    	
+    
     }
 
     @FXML
     void processSound5(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","tom-4.mp3");
       	playMedia.run();
-    	system.out.println("Sounds Play");
+    	
     }
 
     @FXML
     void processSound6(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","kick-bass.mp3");
       	playMedia.run();
-    	system.out.println("Sounds Play");
+    	
     }
 
     @FXML
     void processSound7(ActionEvent event) {
     	 MediaThread playMedia=new MediaThread("drumSounds","snare.mp3");
       	playMedia.run();
-    	system.out.println("Sounds Play");
+    
     }
     @FXML
     void processTv(MouseEvent event) {
