@@ -93,6 +93,7 @@ public class InstrumentalController implements Initializable {
     	 MediaThread playMedia=new MediaThread("drumSounds","tom-3.mp3");
       	playMedia.run();
     	system.out.println("Sounds Play");
+    	System.out.println("testing");
     }
 
     @FXML
