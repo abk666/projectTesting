@@ -30,6 +30,7 @@ public class InstrumentalController implements Initializable {
     	playMedia.run();
     	
     	System.out.println("Hello World");
+    	System.out.println("hello");
     }
 
     @FXML
